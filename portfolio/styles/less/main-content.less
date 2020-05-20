@@ -1,7 +1,153 @@
-.intro{
-    margin-bottom: 1000px;
-    .cta {
-        display: flex;
-        margin: 0 auto;
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  width: 25%;
+  font-size: 5rem;
+}
+
+img {
+    width: 200px;
+}
+
+// intro styles
+.intro {
+  height: 100vh;
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    margin: 0% auto;
+    padding-top: 40vh;
+
+    p {
+      margin: 0 auto;
+      font-size: 4.5rem;
     }
+
+    a {
+      text-decoration: none;
+      margin: 2% auto 0;
+    }
+
+    button {
+      font-size: 2rem;
+      background-color: transparent;
+      border: 1px solid black;
+    }
+  }
+}
+
+// nav styles
+nav {
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+
+  .nav-links {
+    margin-left: 5%;
+    padding: 1% 0;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      padding-right: 5%;
+    }
+  }
+}
+
+// about styles
+.about {
+    height: 100vh;
+    padding-top: 5%;
+    
+    h2 {
+        // margin-top: 50%;
+        
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 5% 20%;
+
+        p {
+            font-size: 2rem;
+        }
+
+        .profile-picture-cont{
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            padding: 5%;
+    
+            p {
+                text-align: center;
+            }
+        }
+        .who-am-i {
+            width: 30%;
+            h3 {
+                font-size: 3rem;
+            }
+            
+        }
+        
+    }
+}
+
+// skills styles
+.skills {
+    height: 100vh;
+    padding-top: 5%;
+
+    h3 {
+        font-size: 3rem;
+        background-color: black;
+        color: white;
+        padding: 2%;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .skill-boxes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 75%;
+        margin: 0 auto;
+        .skill {
+            border: 1px solid black;
+            width: 25%;
+            text-align: center;
+        }
+    }
+}
+// projects styles
+.projects {
+    height: 100vh;
+    padding-top: 5%;
+}
+
+// contact styles
+.contact {
+    height: 100vh;
+    padding-top: 5%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 40%;
+    }
+}
+
+// footer styles
+footer {
+
 }
