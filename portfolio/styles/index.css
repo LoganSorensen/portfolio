@@ -1,4 +1,3 @@
-@import url(fontawesome-all.min.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,14 +130,14 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+a {
+  text-decoration: none;
+}
 h2 {
   margin: 0 auto;
   text-align: center;
   width: 25%;
   font-size: 5rem;
-}
-img {
-  width: 200px;
 }
 .intro {
   height: 100vh;
@@ -174,7 +173,6 @@ nav .nav-links {
 }
 nav .nav-links a {
   color: white;
-  text-decoration: none;
   font-size: 2rem;
   padding-right: 5%;
 }
@@ -182,10 +180,14 @@ nav .nav-links a {
   height: 100vh;
   padding-top: 5%;
 }
+.about .about-and-skills {
+  display: flex;
+}
 .about .about-content {
   display: flex;
-  justify-content: space-between;
-  margin: 5% 20%;
+  flex-direction: column;
+  margin: 5% 0% 5% 20%;
+  width: 40%;
 }
 .about .about-content p {
   font-size: 2rem;
@@ -203,42 +205,43 @@ nav .nav-links a {
   text-align: center;
 }
 .about .about-content .who-am-i {
-  width: 30%;
+  width: 50%;
 }
 .about .about-content .who-am-i h3 {
   font-size: 3rem;
 }
-.skills {
-  height: 100vh;
-  padding-top: 5%;
+.about .skills {
+  width: 35%;
+  margin: 5% 0;
 }
-.skills h3 {
-  font-size: 3rem;
-  background-color: black;
-  color: white;
-  padding: 2%;
-}
-.skills p {
+.about .skills .skill {
+  align-items: center;
+  height: 7%;
   font-size: 2rem;
-}
-.skills .skill-boxes {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 75%;
-  margin: 0 auto;
-}
-.skills .skill-boxes .skill {
   border: 1px solid black;
-  width: 25%;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.about .skills .skill .skill-name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.about .skills .skill .icon-cont {
+  background-color: lightgray;
+  height: 100%;
+  width: 10%;
+}
+.about .skills .skill img {
+  width: 100%;
 }
 .projects {
   height: 100vh;
   padding-top: 5%;
 }
 .contact {
-  height: 100vh;
+  height: 80vh;
   padding-top: 5%;
 }
 .contact form {
@@ -246,4 +249,14 @@ nav .nav-links a {
   flex-direction: column;
   margin: 0 auto;
   width: 40%;
+}
+footer {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 1%;
+}
+footer a {
+  color: white;
 }
