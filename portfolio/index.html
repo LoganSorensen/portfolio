@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="styles/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <section class="intro" id="intro">
@@ -48,7 +49,7 @@
               </div>
               <span>HTML</span>
             </div>
-            <div>Arrow</div>
+            <div class='open-arrow'>▼</div>
           </div>
           <div class="skill">
             <div class="skill-name">
@@ -57,7 +58,7 @@
               </div>
               <span>CSS</span>
             </div>
-            <div>Arrow</div>
+            <div class='open-arrow'>▼</div>
           </div>
           <div class="skill">
             <div class="skill-name">
@@ -66,7 +67,7 @@
               </div>
               <span>Javascript</span>
             </div>
-            <div>Arrow</div>
+            <div class='open-arrow'>▼</div>
           </div>
           <div class="skill">
             <div class="skill-name">
@@ -75,16 +76,16 @@
               </div>
               <span>React</span>
             </div>
-            <div>Arrow</div>
+            <div class='open-arrow'>▼</div>
           </div>
           <div class="skill">
             <div class="skill-name">
               <div class="icon-cont">
-                <img src="styles/svgs/node-brands.svg" />
+                <img src="styles/svgs/node-js-brands.svg" />
               </div>
               <span>Node.js</span>
             </div>
-            <div>Arrow</div>
+            <div class='open-arrow'>▼</div>
           </div>
           <div class="skill">
             <div class="skill-name">
@@ -93,7 +94,7 @@
               </div>
               <span>Python</span>
             </div>
-            <div>Arrow</div>
+            <div class='open-arrow'>▼</div>
           </div>
         </div>
       </div>
@@ -105,13 +106,14 @@
       <h2>Contact</h2>
 
       <form>
-        <input type="text" placeholder="Name" />
-        <input text="email" placeholder="Enter Email" />
-        <textarea placeholder="Your message"></textarea>
+        <input class='form-input' type="text" placeholder="Name" required />
+        <input class='form-input' type="email" placeholder="Enter Email" required />
+        <textarea class='form-input' placeholder="Your message" required></textarea>
+        <button>Submit</button>
       </form>
     </section>
     <footer>
-      <div><a href="#intro">Top ^</a></div>
+      <div><a href="#intro">Top ▲</a></div>
       <span>Logan Sorensen ©2020</span>
     </footer>
   </body>

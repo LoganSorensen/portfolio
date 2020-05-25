@@ -129,9 +129,17 @@ table {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
+}
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  cursor: pointer;
 }
 h2 {
   margin: 0 auto;
@@ -155,11 +163,15 @@ h2 {
 .intro .cta a {
   text-decoration: none;
   margin: 2% auto 0;
+  width: 15%;
 }
 .intro .cta button {
   font-size: 2rem;
   background-color: transparent;
   border: 1px solid black;
+  width: 100%;
+  padding: 2%;
+  border: 2px solid black;
 }
 nav {
   background-color: black;
@@ -186,7 +198,7 @@ nav .nav-links a {
 .about .about-content {
   display: flex;
   flex-direction: column;
-  margin: 5% 0% 5% 20%;
+  margin: 5% 0% 5% 15%;
   width: 40%;
 }
 .about .about-content p {
@@ -200,27 +212,30 @@ nav .nav-links a {
   display: flex;
   align-items: center;
   padding: 5%;
+  margin: 0 0 3% 7%;
 }
 .about .about-content .profile-picture-cont p {
   text-align: center;
 }
 .about .about-content .who-am-i {
   width: 50%;
+  text-align: center;
 }
 .about .about-content .who-am-i h3 {
   font-size: 3rem;
 }
 .about .skills {
   width: 35%;
-  margin: 5% 0;
+  margin-top: 10%;
 }
 .about .skills .skill {
   align-items: center;
-  height: 7%;
+  height: 9%;
   font-size: 2rem;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .about .skills .skill .skill-name {
   display: flex;
@@ -229,12 +244,18 @@ nav .nav-links a {
   width: 50%;
 }
 .about .skills .skill .icon-cont {
-  background-color: lightgray;
+  display: flex;
+  align-items: center;
   height: 100%;
   width: 10%;
+  text-align: center;
 }
-.about .skills .skill img {
-  width: 100%;
+.about .skills .skill .icon-cont img {
+  width: 80%;
+  margin: 0 auto;
+}
+.about .skills .skill .open-arrow {
+  margin-right: 1%;
 }
 .projects {
   height: 100vh;
@@ -244,11 +265,29 @@ nav .nav-links a {
   height: 80vh;
   padding-top: 5%;
 }
+.contact h2 {
+  margin-bottom: 2%;
+}
 .contact form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 40%;
+  width: 30%;
+}
+.contact form .form-input {
+  margin: 0.5%;
+  padding: 1%;
+  border: 2px solid black;
+}
+.contact form textarea {
+  min-height: 10vh;
+}
+.contact form button {
+  width: 30%;
+  margin: 1% 0 0 69.5%;
+  border: 2px solid black;
+  background-color: transparent;
+  font-size: 2rem;
 }
 footer {
   text-align: center;
