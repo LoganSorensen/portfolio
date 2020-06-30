@@ -165,14 +165,6 @@ h2 {
   margin: 2% auto 0;
   width: 15%;
 }
-.intro .cta button {
-  font-size: 2rem;
-  background-color: transparent;
-  border: 1px solid black;
-  width: 100%;
-  padding: 2%;
-  border: 2px solid black;
-}
 nav {
   background-color: black;
   position: -webkit-sticky;
@@ -188,23 +180,23 @@ nav .nav-links a {
   font-size: 2rem;
   padding-right: 5%;
 }
-.about {
+.about-section {
   height: 100vh;
   padding-top: 5%;
 }
-.about .about-and-skills {
+.about-section .about-and-skills {
   display: flex;
 }
-.about .about-content {
+.about-section .about-content {
   display: flex;
   flex-direction: column;
   margin: 5% 0% 5% 15%;
   width: 40%;
 }
-.about .about-content p {
+.about-section .about-content p {
   font-size: 2rem;
 }
-.about .about-content .profile-picture-cont {
+.about-section .about-content .profile-picture-cont {
   background-color: lightgray;
   width: 200px;
   height: 200px;
@@ -214,80 +206,101 @@ nav .nav-links a {
   padding: 5%;
   margin: 0 0 3% 7%;
 }
-.about .about-content .profile-picture-cont p {
+.about-section .about-content .profile-picture-cont p {
   text-align: center;
 }
-.about .about-content .who-am-i {
+.about-section .about-content .who-am-i {
   width: 50%;
   text-align: center;
 }
-.about .about-content .who-am-i h3 {
+.about-section .about-content .who-am-i h3 {
   font-size: 3rem;
 }
-.about .skills {
+.about-section .skills-section {
   width: 35%;
   margin-top: 10%;
 }
-.about .skills .skill {
+.about-section .skills-section .skill {
   align-items: center;
-  height: 9%;
+  height: 4vh;
   font-size: 2rem;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
-.about .skills .skill .skill-name {
+.about-section .skills-section .skill .skill-name {
   display: flex;
   align-items: center;
   height: 100%;
   width: 50%;
 }
-.about .skills .skill .icon-cont {
+.about-section .skills-section .skill .icon-cont {
   display: flex;
   align-items: center;
   height: 100%;
   width: 10%;
   text-align: center;
 }
-.about .skills .skill .icon-cont img {
+.about-section .skills-section .skill .icon-cont img {
   width: 80%;
   margin: 0 auto;
 }
-.about .skills .skill .open-arrow {
+.about-section .skills-section .skill .open-arrow {
   margin-right: 1%;
 }
-.projects {
-  height: 100vh;
+.about-section .skills-section .skill-content {
+  border: 1px solid black;
+  padding: 2%;
+  font-size: 1.8rem;
+  display: none;
+}
+.projects-section {
+  height: 130vh;
   padding-top: 5%;
 }
-.contact {
+.projects-section .projects {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.projects-section .project {
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.projects-section .project .project-image {
+  background-color: lightgray;
+  width: 400px;
+  height: 400px;
+}
+.projects-section .project h3 {
+  padding: 2%;
+  font-size: 3rem;
+}
+.contact-section {
   height: 80vh;
   padding-top: 5%;
 }
-.contact h2 {
+.contact-section h2 {
   margin-bottom: 2%;
 }
-.contact form {
+.contact-section form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 30%;
 }
-.contact form .form-input {
+.contact-section form .form-input {
   margin: 0.5%;
   padding: 1%;
   border: 2px solid black;
 }
-.contact form textarea {
+.contact-section form textarea {
   min-height: 10vh;
-}
-.contact form button {
-  width: 30%;
-  margin: 1% 0 0 69.5%;
-  border: 2px solid black;
-  background-color: transparent;
-  font-size: 2rem;
 }
 footer {
   text-align: center;
@@ -298,4 +311,26 @@ footer {
 }
 footer a {
   color: white;
+}
+.cta button {
+  font-size: 2rem;
+  background-color: white;
+  width: 100%;
+  padding: 2%;
+  border: 2px solid black;
+}
+.cta button:hover {
+  color: white;
+  background-color: black;
+}
+.contact-section button {
+  width: 30%;
+  margin: 1% 0 0 69.5%;
+  border: 2px solid black;
+  background-color: transparent;
+  font-size: 2rem;
+}
+.contact-section button:hover {
+  color: white;
+  background-color: black;
 }
