@@ -6,6 +6,10 @@
     padding: 2%;
     border: 2px solid @btn-secondary;
 
+    @media @laptop {
+      font-size: 2.5rem
+    }
+
     &:hover {
       color: @btn-primary;
       background-color: @btn-secondary;
@@ -20,6 +24,11 @@
     border: 2px solid @btn-secondary;
     background-color: transparent;
     font-size: 2rem;
+
+    @media @laptop {
+      font-size: 2.5rem;
+      padding:1%;
+    }
 
     &:hover {
       color: @btn-primary;

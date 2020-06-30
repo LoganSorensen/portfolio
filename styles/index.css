@@ -165,6 +165,93 @@ h2 {
   margin: 2% auto 0;
   width: 15%;
 }
+@media (max-width: 1024px) {
+  .intro .cta a {
+    width: 50%;
+  }
+}
+.contact-section {
+  height: 80vh;
+  padding-top: 5%;
+}
+.contact-section h2 {
+  margin-bottom: 2%;
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30%;
+}
+@media (max-width: 1024px) {
+  .contact-section form {
+    width: 80%;
+  }
+}
+.contact-section form .form-input {
+  margin: 0.5%;
+  padding: 1%;
+  border: 2px solid black;
+}
+@media (max-width: 1024px) {
+  .contact-section form .form-input {
+    font-size: 2rem;
+    margin: 1%;
+    padding: 1.5%;
+  }
+}
+.contact-section form textarea {
+  min-height: 10vh;
+}
+footer {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding: 1%;
+}
+@media (max-width: 1024px) {
+  footer {
+    font-size: 2.5rem;
+    padding: 1.5%;
+  }
+}
+footer a {
+  color: white;
+}
+.cta button {
+  font-size: 2rem;
+  background-color: white;
+  width: 100%;
+  padding: 2%;
+  border: 2px solid black;
+}
+@media (max-width: 1024px) {
+  .cta button {
+    font-size: 2.5rem;
+  }
+}
+.cta button:hover {
+  color: white;
+  background-color: black;
+}
+.contact-section button {
+  width: 30%;
+  margin: 1% 0 0 69.5%;
+  border: 2px solid black;
+  background-color: transparent;
+  font-size: 2rem;
+}
+@media (max-width: 1024px) {
+  .contact-section button {
+    font-size: 2.5rem;
+    padding: 1%;
+  }
+}
+.contact-section button:hover {
+  color: white;
+  background-color: black;
+}
 nav {
   background-color: black;
   position: -webkit-sticky;
@@ -175,10 +262,21 @@ nav .nav-links {
   margin-left: 5%;
   padding: 1% 0;
 }
+@media (max-width: 1024px) {
+  nav .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 nav .nav-links a {
   color: white;
   font-size: 2rem;
   padding-right: 5%;
+}
+@media (max-width: 1024px) {
+  nav .nav-links a {
+    font-size: 2.5rem;
+  }
 }
 .about-section {
   height: 100vh;
@@ -187,11 +285,25 @@ nav .nav-links a {
 .about-section .about-and-skills {
   display: flex;
 }
+@media (max-width: 1024px) {
+  .about-section .about-and-skills {
+    align-items: center;
+    padding: 0 2%;
+    margin-top: 5%;
+  }
+}
 .about-section .about-content {
   display: flex;
   flex-direction: column;
   margin: 5% 0% 5% 15%;
   width: 40%;
+}
+@media (max-width: 1024px) {
+  .about-section .about-content {
+    align-items: center;
+    margin: 0;
+    width: 60%;
+  }
 }
 .about-section .about-content p {
   font-size: 2rem;
@@ -206,6 +318,12 @@ nav .nav-links a {
   padding: 5%;
   margin: 0 0 3% 7%;
 }
+@media (max-width: 1024px) {
+  .about-section .about-content .profile-picture-cont {
+    margin: 0 0 7%;
+    padding: 0;
+  }
+}
 .about-section .about-content .profile-picture-cont p {
   text-align: center;
 }
@@ -213,12 +331,33 @@ nav .nav-links a {
   width: 50%;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .about-section .about-content .who-am-i {
+    width: 90%;
+  }
+}
 .about-section .about-content .who-am-i h3 {
   font-size: 3rem;
+}
+@media (max-width: 1024px) {
+  .about-section .about-content .who-am-i h3 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about-section .about-content .who-am-i p {
+    font-size: 2.5rem;
+  }
 }
 .about-section .skills-section {
   width: 35%;
   margin-top: 10%;
+}
+@media (max-width: 1024px) {
+  .about-section .skills-section {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .about-section .skills-section .skill {
   align-items: center;
@@ -267,6 +406,11 @@ nav .nav-links a {
   flex-wrap: wrap;
   margin-top: 5%;
 }
+@media (max-width: 1024px) {
+  .projects-section .projects {
+    justify-content: space-between;
+  }
+}
 .projects-section .project {
   text-align: center;
   border: 1px solid black;
@@ -280,57 +424,4 @@ nav .nav-links a {
 .projects-section .project h3 {
   padding: 2%;
   font-size: 3rem;
-}
-.contact-section {
-  height: 80vh;
-  padding-top: 5%;
-}
-.contact-section h2 {
-  margin-bottom: 2%;
-}
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 30%;
-}
-.contact-section form .form-input {
-  margin: 0.5%;
-  padding: 1%;
-  border: 2px solid black;
-}
-.contact-section form textarea {
-  min-height: 10vh;
-}
-footer {
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  background-color: black;
-  padding: 1%;
-}
-footer a {
-  color: white;
-}
-.cta button {
-  font-size: 2rem;
-  background-color: white;
-  width: 100%;
-  padding: 2%;
-  border: 2px solid black;
-}
-.cta button:hover {
-  color: white;
-  background-color: black;
-}
-.contact-section button {
-  width: 30%;
-  margin: 1% 0 0 69.5%;
-  border: 2px solid black;
-  background-color: transparent;
-  font-size: 2rem;
-}
-.contact-section button:hover {
-  color: white;
-  background-color: black;
 }
