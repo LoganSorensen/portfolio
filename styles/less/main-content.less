@@ -1,7 +1,5 @@
 h2 {
-  margin: 0 auto;
   text-align: center;
-  width: 25%;
   font-size: 5rem;
 }
 
@@ -14,6 +12,10 @@ h2 {
     flex-direction: column;
     margin: 0% auto;
     padding-top: 40vh;
+
+    @media @mobile {
+      text-align: center;
+    }
 
     p {
       margin: 0 auto;
@@ -51,6 +53,10 @@ h2 {
       width: 80%;
     }
 
+    @media @mobile {
+      width: 90%;
+    }
+
     .form-input {
       margin: 0.5%;
       padding: 1%;
@@ -60,6 +66,10 @@ h2 {
         font-size: 2rem;
         margin: 1%;
         padding: 1.5%;
+      }
+
+      @media @mobile {
+        margin: 3% 0;
       }
     }
 

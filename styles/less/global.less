@@ -1,17 +1,30 @@
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;  
+
+  @media @mobile {
+      scroll-behavior: auto;
+  }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-input, textarea {
-    font-family: 'Roboto', sans-serif;
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
+
+// section {
+//   width: 100%;
+// }
