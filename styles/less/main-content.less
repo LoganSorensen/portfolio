@@ -10,11 +10,16 @@
 
     @media @mobile {
       text-align: center;
+      padding-top: 10vh;
     }
 
     p {
       margin: 0 auto;
       font-size: 4.5rem;
+
+      @media @mobile {
+        margin-bottom: 8%;
+      }
     }
 
     a {
@@ -24,6 +29,11 @@
 
       @media @laptop {
         width: 50%;
+      }
+
+      @media @mobile {
+        width: 70%;
+        margin-top: 8%;
       }
     }
   }

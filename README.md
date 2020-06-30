@@ -1,4 +1,4 @@
 # portfolio
 
 # TODO
--look into adding screen height media queries
+-look at section heights, add min-height to sections

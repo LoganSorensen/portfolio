@@ -165,11 +165,17 @@ h2 {
 @media (max-width: 500px) {
   .intro .cta {
     text-align: center;
+    padding-top: 10vh;
   }
 }
 .intro .cta p {
   margin: 0 auto;
   font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  .intro .cta p {
+    margin-bottom: 8%;
+  }
 }
 .intro .cta a {
   text-decoration: none;
@@ -179,6 +185,12 @@ h2 {
 @media (max-width: 1024px) {
   .intro .cta a {
     width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .intro .cta a {
+    width: 70%;
+    margin-top: 8%;
   }
 }
 .contact-section {
@@ -310,6 +322,7 @@ nav .nav-links a {
 @media (max-width: 500px) {
   nav .nav-links a {
     font-size: 1.9rem;
+    padding: 5% 0;
   }
 }
 .about-section {
