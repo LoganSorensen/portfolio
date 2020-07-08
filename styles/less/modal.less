@@ -1,0 +1,31 @@
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    border: 1px solid red;
+    z-index: 2;
+    background-color: white;
+}
+
+.visible {
+    display: block;
+}
+
+
+
+.body-blackout {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+    display: none;
+
+    &.is-blacked-out {
+      display: block;
+    }
+  }

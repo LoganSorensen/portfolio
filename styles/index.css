@@ -138,6 +138,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -298,6 +299,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 nav .nav-links {
   margin-left: 5%;
@@ -469,7 +471,7 @@ nav .nav-links a {
   display: none;
 }
 .projects-section {
-  height: 130vh;
+  min-height: 130vh;
   padding-top: 5%;
 }
 @media (max-width: 500px) {
@@ -491,6 +493,10 @@ nav .nav-links a {
   width: 30%;
   margin: 0 1% 5%;
 }
+.projects-section .project:hover img {
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
 @media (max-width: 1024px) {
   .projects-section .project {
     width: 40%;
@@ -503,10 +509,59 @@ nav .nav-links a {
 }
 .projects-section .project .project-image {
   background-color: lightgray;
+  position: relative;
   width: 100%;
   height: 40vh;
+  overflow: hidden;
+}
+.projects-section .project .project-image img {
+  max-width: 100%;
+}
+.projects-section .project .project-image button {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  padding: 2%;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  width: 30%;
+  font-size: 2rem;
+}
+.projects-section .project .project-image button:hover {
+  color: white;
+  background-color: black;
+}
+.projects-section .project .project-image:hover button {
+  opacity: 1;
 }
 .projects-section .project h3 {
   padding: 2%;
   font-size: 3rem;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  border: 1px solid red;
+  z-index: 2;
+  background-color: white;
+}
+.visible {
+  display: block;
+}
+.body-blackout {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+.body-blackout.is-blacked-out {
+  display: block;
 }
