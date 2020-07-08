@@ -293,6 +293,17 @@ footer a {
   color: white;
   background-color: black;
 }
+.modal-content a {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 1%;
+  font-size: 2rem;
+}
+.modal-content a:hover {
+  background-color: black;
+  color: white;
+}
 nav {
   background-color: black;
   position: -webkit-sticky;
@@ -486,6 +497,7 @@ nav .nav-links a {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 5%;
+  position: relative;
 }
 .projects-section .project {
   text-align: center;
@@ -543,11 +555,40 @@ nav .nav-links a {
 .hidden {
   display: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .modal {
-  position: absolute;
-  border: 1px solid red;
+  position: fixed;
+  height: 80vh;
+  width: 50%;
+  top: 10%;
+  border-radius: 5px;
   z-index: 2;
   background-color: white;
+  overflow: hidden;
+}
+.modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  border-bottom: 2px solid black;
+}
+.modal .modal-header h2 {
+  font-size: 3rem;
+}
+.modal .modal-content {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal .modal-content .img-cont {
+  width: 100%;
+}
+.modal .modal-content p {
+  margin: 2%;
+  font-size: 1.7rem;
 }
 .visible {
   display: block;

@@ -2,18 +2,53 @@
     display: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .modal {
-    position: absolute;
-    border: 1px solid red;
+    position: fixed;
+    height: 80vh;
+    width: 50%;
+    top: 10%;
+    border-radius: 5px;
     z-index: 2;
     background-color: white;
+    overflow: hidden;
+    
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        border-bottom: 2px solid black;
+        
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    
+    .modal-content {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-cont {
+            width: 100%;
+        }
+
+        p {
+            margin: 2%;
+            font-size: 1.7rem;
+        }
+
+    }
+
 }
 
 .visible {
     display: block;
 }
-
-
 
 .body-blackout {
     position: fixed;
