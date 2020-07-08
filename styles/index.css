@@ -293,16 +293,21 @@ footer a {
   color: white;
   background-color: black;
 }
-.modal-content a {
+.modal a {
   background-color: white;
   color: black;
   border: 2px solid black;
   padding: 1%;
   font-size: 2rem;
 }
-.modal-content a:hover {
+.modal a:hover {
   background-color: black;
   color: white;
+}
+.modal .modal-close {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
 }
 nav {
   background-color: black;
@@ -467,13 +472,20 @@ nav .nav-links a {
   height: 100%;
   width: 10%;
   text-align: center;
+  user-select: none;
 }
 .about-section .skills-section .skill .icon-cont img {
   width: 80%;
   margin: 0 auto;
 }
 .about-section .skills-section .skill .open-arrow {
+  transition: 0.4s ease;
   margin-right: 1%;
+  user-select: none;
+}
+.about-section .skills-section .skill .inverted {
+  transform: rotate(0.5turn);
+  transition: 0.4s ease;
 }
 .about-section .skills-section .skill-content {
   border: 1px solid black;
@@ -553,6 +565,7 @@ nav .nav-links a {
 }
 .hidden {
   display: none;
+  transition: 2s ease;
 }
 .no-scroll {
   overflow: hidden;

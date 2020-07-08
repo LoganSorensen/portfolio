@@ -41,12 +41,9 @@ accordionTriggers.forEach((trigger) => {
     const accordion = document.querySelector(
       `[data-accordion="${accordionTrigger}"]`
     );
+    const arrow = document.querySelector(`[data-arrow="${accordionTrigger}"]`)
 
-    // accordions.forEach(i => {
-    //   i.classList.remove('visible')
-    // })
+    arrow.classList.toggle('inverted')
     accordion.classList.toggle('visible')
-    console.log(accordion.classList)
-
   });
 });

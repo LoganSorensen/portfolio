@@ -43,15 +43,22 @@
   }
 }
 
-.modal-content a {
-  background-color: @btn-primary;
-  color: @btn-secondary;
-  border: 2px solid @btn-secondary;
-  padding: 1%;
-  font-size: 2rem;
+.modal {
+  a {
+    background-color: @btn-primary;
+    color: @btn-secondary;
+    border: 2px solid @btn-secondary;
+    padding: 1%;
+    font-size: 2rem;
 
-  &:hover {
-    background-color: @btn-secondary;
-    color: @btn-primary;
+    &:hover {
+      background-color: @btn-secondary;
+      color: @btn-primary;
+    }
+  }
+  .modal-close {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
   }
 }
