@@ -169,7 +169,7 @@ h2 {
 @media (max-width: 500px) {
   .intro .cta {
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 25vh;
   }
 }
 .intro .cta p {
@@ -312,7 +312,7 @@ nav .nav-links a {
 }
 @media (max-width: 500px) {
   .about-section {
-    padding-top: 10%;
+    padding-top: 20%;
     height: auto;
   }
 }
@@ -462,6 +462,7 @@ nav .nav-links a {
 @media (max-width: 500px) {
   .projects-section {
     height: auto;
+    padding-top: 20%;
   }
 }
 .projects-section .projects {
@@ -523,6 +524,12 @@ nav .nav-links a {
   color: white;
   background-color: black;
 }
+@media (max-width: 500px) {
+  .projects-section .project .project-image button {
+    width: 40%;
+    left: 32%;
+  }
+}
 .projects-section .project h3 {
   padding: 2%;
   font-size: 3rem;
@@ -543,6 +550,11 @@ nav .nav-links a {
   background-color: white;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .modal {
+    width: 100%;
+  }
+}
 .modal .modal-header {
   display: flex;
   justify-content: space-between;
@@ -558,8 +570,14 @@ nav .nav-links a {
   flex-direction: column;
   align-items: center;
 }
-.modal .modal-content .img-cont {
+.modal .modal-content .image-cont {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .modal .modal-content .image-cont {
+    height: 50vh;
+    overflow: hidden;
+  }
 }
 .modal .modal-content p {
   margin: 2%;
@@ -581,6 +599,11 @@ nav .nav-links a {
 .contact-section {
   height: 80vh;
   padding-top: 5%;
+}
+@media (max-width: 500px) {
+  .contact-section {
+    padding-top: 20%;
+  }
 }
 .contact-section h2 {
   margin-bottom: 2%;
