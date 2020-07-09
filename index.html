@@ -9,9 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    
     <section class="intro" id="intro">
       <div class="cta">
         <p>Hi, I'm Logan Sorensen.</p>
@@ -52,7 +52,7 @@
               </div>
               <span>HTML</span>
             </div>
-            <div class="open-arrow" data-arrow="one">▼</div>
+            <div class="open-arrow" data-arrow="one"><i class="fas fa-chevron-down"></i></div>
           </div>
           <div class="skill-content hidden" data-accordion="one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -67,7 +67,7 @@
               </div>
               <span>CSS</span>
             </div>
-            <div class="open-arrow" data-arrow="two">▼</div>
+            <div class="open-arrow" data-arrow="two"><i class="fas fa-chevron-down"></i></div>
           </div>
           <div class="skill-content hidden" data-accordion="two">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -82,7 +82,7 @@
               </div>
               <span>Javascript</span>
             </div>
-            <div class="open-arrow" data-arrow="three">▼</div>
+            <div class="open-arrow" data-arrow="three"><i class="fas fa-chevron-down"></i></div>
           </div>
           <div class="skill-content hidden" data-accordion="three">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -97,7 +97,7 @@
               </div>
               <span>React</span>
             </div>
-            <div class="open-arrow" data-arrow="four">▼</div>
+            <div class="open-arrow" data-arrow="four"><i class="fas fa-chevron-down"></i></div>
           </div>
           <div class="skill-content hidden" data-accordion="four">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -112,7 +112,7 @@
               </div>
               <span>Node.js</span>
             </div>
-            <div class="open-arrow" data-arrow="fives">▼</div>
+            <div class="open-arrow" data-arrow="five"><i class="fas fa-chevron-down"></i></div>
           </div>
           <div class="skill-content hidden" data-accordion="five">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -127,7 +127,7 @@
               </div>
               <span>Python</span>
             </div>
-            <div class="open-arrow" data-arrow="six">▼</div>
+            <div class="open-arrow" data-arrow="six"><i class="fas fa-chevron-down"></i></div>
           </div>
           <div class="skill-content hidden" data-accordion="six">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -144,7 +144,7 @@
       <div class="projects">
         <div class="project">
           <div class="project-image">
-            <img src='https://source.unsplash.com/random/500x500'>
+            <img src="https://source.unsplash.com/random/500x500" />
             <button class="modal-trigger" data-popup-trigger="one">
               View More
             </button>
@@ -153,16 +153,16 @@
         </div>
         <div class="project">
           <div class="project-image">
-            <img src='https://source.unsplash.com/random/500x500'>
-              <button class="modal-trigger" data-popup-trigger="two">
-                View More
-              </button>
+            <img src="https://source.unsplash.com/random/500x500" />
+            <button class="modal-trigger" data-popup-trigger="two">
+              View More
+            </button>
           </div>
           <h3 class="project-title">Placeholder Title</h3>
         </div>
         <div class="project">
           <div class="project-image">
-            <img src='https://source.unsplash.com/random/500x500'>
+            <img src="https://source.unsplash.com/random/500x500" />
             <button class="modal-trigger" data-popup-trigger="three">
               View More
             </button>
@@ -171,54 +171,80 @@
         </div>
         <div class="modal hidden" data-popup-modal="one">
           <div class="modal-header">
-            <h2>
+            <h3>
               Modal One Title
-            </h2>
-            <button class="modal-close">X</button>
+            </h3>
+            <button class="modal-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src='https://source.unsplash.com/random/500x500'>
+              <img src="https://source.unsplash.com/random/500x500" />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit esse similique, quasi quo hic aspernatur sint dolorem, vel accusantium iusto, assumenda adipisci ut cum dolorum molestiae at sed neque distinctio.</p>
-            <a href='https://github.com/LoganSorensen' target='_blank'>Github</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              esse similique, quasi quo hic aspernatur sint dolorem, vel
+              accusantium iusto, assumenda adipisci ut cum dolorum molestiae at
+              sed neque distinctio.
+            </p>
+            <a href="https://github.com/LoganSorensen" target="_blank">
+              Github
+            </a>
           </div>
         </div>
         <div class="modal hidden" data-popup-modal="two">
           <div class="modal-header">
-            <h2>
+            <h3>
               Modal Two Title
-            </h2>
-            <button class="modal-close">X</button>
+            </h3>
+            <button class="modal-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src='https://source.unsplash.com/random/500x500'>
+              <img src="https://source.unsplash.com/random/500x500" />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit esse similique, quasi quo hic aspernatur sint dolorem, vel accusantium iusto, assumenda adipisci ut cum dolorum molestiae at sed neque distinctio.</p>
-            <a href='https://github.com/LoganSorensen' target='_blank'>Github</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              esse similique, quasi quo hic aspernatur sint dolorem, vel
+              accusantium iusto, assumenda adipisci ut cum dolorum molestiae at
+              sed neque distinctio.
+            </p>
+            <a href="https://github.com/LoganSorensen" target="_blank">
+              Github
+            </a>
           </div>
         </div>
         <div class="modal hidden" data-popup-modal="three">
           <div class="modal-header">
-            <h2>
+            <h3>
               Modal Three Title
-            </h2>
-            <button class="modal-close">X</button>
+            </h3>
+            <button class="modal-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src='https://source.unsplash.com/random/500x500'>
+              <img src="https://source.unsplash.com/random/500x500" />
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit esse similique, quasi quo hic aspernatur sint dolorem, vel accusantium iusto, assumenda adipisci ut cum dolorum molestiae at sed neque distinctio.</p>
-            <a href='https://github.com/LoganSorensen' target='_blank'>Github</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              esse similique, quasi quo hic aspernatur sint dolorem, vel
+              accusantium iusto, assumenda adipisci ut cum dolorum molestiae at
+              sed neque distinctio.
+            </p>
+            <a href="https://github.com/LoganSorensen" target="_blank">
+              Github
+            </a>
           </div>
         </div>
       </div>
     </section>
     <section class="contact-section" id="contact">
       <h2>Contact</h2>
-
       <form>
         <input class="form-input" type="text" placeholder="Name" required />
         <input
@@ -234,9 +260,17 @@
         ></textarea>
         <button>Submit</button>
       </form>
+      <div class="links">
+        <a href="https://github.com/LoganSorensen" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/logan-sorensen/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
     </section>
     <footer>
-      <div><a href="#intro">Top ▲</a></div>
+      <div><a href="#intro"><i class="fas fa-angle-double-up"></i></a></div>
       <span>Logan Sorensen ©2020</span>
     </footer>
   </body>

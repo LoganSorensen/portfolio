@@ -154,6 +154,9 @@ h2 {
   text-align: center;
   font-size: 5rem;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .intro {
   height: 100vh;
 }
@@ -194,49 +197,6 @@ h2 {
     margin-top: 8%;
   }
 }
-.contact-section {
-  height: 80vh;
-  padding-top: 5%;
-}
-.contact-section h2 {
-  margin-bottom: 2%;
-}
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 30%;
-}
-@media (max-width: 1024px) {
-  .contact-section form {
-    width: 80%;
-  }
-}
-@media (max-width: 500px) {
-  .contact-section form {
-    width: 90%;
-  }
-}
-.contact-section form .form-input {
-  margin: 0.5%;
-  padding: 1%;
-  border: 2px solid black;
-}
-@media (max-width: 1024px) {
-  .contact-section form .form-input {
-    font-size: 2rem;
-    margin: 1%;
-    padding: 1.5%;
-  }
-}
-@media (max-width: 500px) {
-  .contact-section form .form-input {
-    margin: 3% 0;
-  }
-}
-.contact-section form textarea {
-  min-height: 10vh;
-}
 footer {
   text-align: center;
   font-size: 2rem;
@@ -266,6 +226,7 @@ footer a {
   }
 }
 .cta button:hover {
+  transition: 0.4s ease;
   color: white;
   background-color: black;
 }
@@ -290,6 +251,7 @@ footer a {
   }
 }
 .contact-section button:hover {
+  transition: 0.4s ease;
   color: white;
   background-color: black;
 }
@@ -301,6 +263,7 @@ footer a {
   font-size: 2rem;
 }
 .modal a:hover {
+  transition: 0.4s ease;
   background-color: black;
   color: white;
 }
@@ -493,7 +456,7 @@ nav .nav-links a {
   font-size: 1.8rem;
 }
 .projects-section {
-  min-height: 130vh;
+  min-height: 100vh;
   padding-top: 5%;
 }
 @media (max-width: 500px) {
@@ -515,6 +478,9 @@ nav .nav-links a {
   border: 1px solid black;
   width: 30%;
   margin: 0 1% 5%;
+}
+.projects-section .project:hover .project-image button {
+  opacity: 1;
 }
 .projects-section .project:hover img {
   opacity: 0.3;
@@ -553,11 +519,9 @@ nav .nav-links a {
   font-size: 2rem;
 }
 .projects-section .project .project-image button:hover {
+  transition: 0.4s ease;
   color: white;
   background-color: black;
-}
-.projects-section .project .project-image:hover button {
-  opacity: 1;
 }
 .projects-section .project h3 {
   padding: 2%;
@@ -565,10 +529,9 @@ nav .nav-links a {
 }
 .hidden {
   display: none;
-  transition: 2s ease;
 }
-.no-scroll {
-  overflow: hidden;
+.visible {
+  display: block;
 }
 .modal {
   position: fixed;
@@ -586,7 +549,7 @@ nav .nav-links a {
   padding: 2%;
   border-bottom: 2px solid black;
 }
-.modal .modal-header h2 {
+.modal .modal-header h3 {
   font-size: 3rem;
 }
 .modal .modal-content {
@@ -602,9 +565,6 @@ nav .nav-links a {
   margin: 2%;
   font-size: 1.7rem;
 }
-.visible {
-  display: block;
-}
 .body-blackout {
   position: fixed;
   z-index: 1;
@@ -617,4 +577,89 @@ nav .nav-links a {
 }
 .body-blackout.is-blacked-out {
   display: block;
+}
+.contact-section {
+  height: 80vh;
+  padding-top: 5%;
+}
+.contact-section h2 {
+  margin-bottom: 2%;
+}
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30%;
+}
+@media (max-width: 1024px) {
+  .contact-section form {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-section form {
+    width: 90%;
+  }
+}
+.contact-section form .form-input {
+  margin: 0.5%;
+  padding: 1%;
+  border: 2px solid black;
+}
+.contact-section form .form-input:focus {
+  border: 3px solid black;
+}
+@media (max-width: 1024px) {
+  .contact-section form .form-input {
+    font-size: 2rem;
+    margin: 1%;
+    padding: 1.5%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-section form .form-input {
+    margin: 3% 0;
+  }
+}
+.contact-section form textarea {
+  min-height: 10vh;
+}
+.contact-section .links {
+  margin: 8% auto;
+  width: 30%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .contact-section .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact-section .links a {
+  margin: 5%;
+}
+.contact-section .links i {
+  width: 7%;
+  font-size: 4rem;
+  background-color: black;
+  color: white;
+  padding: 2%;
+  border-radius: 50%;
+  border: 5px solid transparent;
+}
+.contact-section .links i:hover {
+  transition: 0.4s ease;
+  border: 5px solid black;
+  color: black;
+  background-color: white;
+}
+@media (max-width: 1024px) {
+  .contact-section .links i {
+    width: 14%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-section .links i {
+    width: 30%;
+  }
 }

@@ -1,0 +1,86 @@
+.contact-section {
+  height: 80vh;
+  padding-top: 5%;
+  h2 {
+    margin-bottom: 2%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+
+    @media @laptop {
+      width: 50%;
+    }
+
+    @media @mobile {
+      width: 90%;
+    }
+
+    .form-input {
+      margin: 0.5%;
+      padding: 1%;
+      border: 2px solid black;
+      &:focus {
+        border: 3px solid black;
+      }
+
+      @media @laptop {
+        font-size: 2rem;
+        margin: 1%;
+        padding: 1.5%;
+      }
+
+      @media @mobile {
+        margin: 3% 0;
+      }
+    }
+
+    textarea {
+      min-height: 10vh;
+    }
+  }
+
+  .links {
+    margin: 8% auto;
+    width: 30%;
+    text-align: center;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+      margin: 5%;
+
+    }
+
+    i {
+      width: 7%;
+      font-size: 4rem;
+      background-color: @btn-secondary;
+      color: @btn-primary;
+      padding: 2%;
+      border-radius: 50%;
+      border: 5px solid transparent;
+
+      &:hover{
+          transition: 0.4s ease;
+          border: 5px solid black;
+          color: @btn-secondary;
+          background-color: @btn-primary;
+      }
+
+      @media @laptop {
+          width: 14%;
+      }
+
+      @media @mobile {
+        width: 30%;
+      }
+    }
+  }
+}
