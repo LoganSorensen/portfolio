@@ -269,6 +269,12 @@ footer a {
   background-color: white;
   color: black;
 }
+@media (max-width: 500px) {
+  .modal a {
+    width: 40%;
+    padding: 2%;
+  }
+}
 .modal .modal-close {
   font-size: 2rem;
   background: transparent;
@@ -418,7 +424,7 @@ nav .nav-links a {
 }
 .about-section .skills-section .skill {
   align-items: center;
-  height: 4vh;
+  height: 4.3vh;
   font-size: 2rem;
   border: 1px solid black;
   display: flex;
@@ -438,6 +444,21 @@ nav .nav-links a {
   width: 10%;
   text-align: center;
   user-select: none;
+  margin: 0 2% 0 1%;
+}
+@media (max-width: 500px) {
+  .about-section .skills-section .skill .icon-cont {
+    margin: 0 6% 0 2%;
+  }
+}
+.about-section .skills-section .skill .icon-cont i {
+  margin: 0 auto;
+  font-size: 3.5rem;
+}
+@media (max-width: 1024px) {
+  .about-section .skills-section .skill .icon-cont i {
+    font-size: 3rem;
+  }
 }
 .about-section .skills-section .skill .icon-cont img {
   width: 80%;
