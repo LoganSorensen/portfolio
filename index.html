@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Logan Sorensen - Web Developer</title>
     <link href="styles/index.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -52,7 +52,9 @@
               </div>
               <span>HTML</span>
             </div>
-            <div class="open-arrow" data-arrow="one"><i class="fas fa-chevron-down"></i></div>
+            <div class="open-arrow" data-arrow="one">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <div class="skill-content hidden" data-accordion="one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -67,7 +69,9 @@
               </div>
               <span>CSS</span>
             </div>
-            <div class="open-arrow" data-arrow="two"><i class="fas fa-chevron-down"></i></div>
+            <div class="open-arrow" data-arrow="two">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <div class="skill-content hidden" data-accordion="two">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -82,7 +86,9 @@
               </div>
               <span>Javascript</span>
             </div>
-            <div class="open-arrow" data-arrow="three"><i class="fas fa-chevron-down"></i></div>
+            <div class="open-arrow" data-arrow="three">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <div class="skill-content hidden" data-accordion="three">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -97,7 +103,9 @@
               </div>
               <span>React</span>
             </div>
-            <div class="open-arrow" data-arrow="four"><i class="fas fa-chevron-down"></i></div>
+            <div class="open-arrow" data-arrow="four">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <div class="skill-content hidden" data-accordion="four">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -112,7 +120,9 @@
               </div>
               <span>Node.js</span>
             </div>
-            <div class="open-arrow" data-arrow="five"><i class="fas fa-chevron-down"></i></div>
+            <div class="open-arrow" data-arrow="five">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <div class="skill-content hidden" data-accordion="five">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -127,7 +137,9 @@
               </div>
               <span>Python</span>
             </div>
-            <div class="open-arrow" data-arrow="six"><i class="fas fa-chevron-down"></i></div>
+            <div class="open-arrow" data-arrow="six">
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
           <div class="skill-content hidden" data-accordion="six">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -144,35 +156,37 @@
       <div class="projects">
         <div class="project">
           <div class="project-image">
-            <img src="https://source.unsplash.com/random/500x500" />
+            <img src="styles/images/thumbnails/game-of-life.PNG" />
             <button class="modal-trigger" data-popup-trigger="one">
               View More
             </button>
           </div>
-          <h3 class="project-title">Placeholder Title</h3>
+          <h3 class="project-title">Conway's Game of Life</h3>
         </div>
         <div class="project">
           <div class="project-image">
-            <img src="https://source.unsplash.com/random/500x500" />
+            <img src="styles/images/thumbnails/crwn-clothing.png" />
             <button class="modal-trigger" data-popup-trigger="two">
               View More
             </button>
           </div>
-          <h3 class="project-title">Placeholder Title</h3>
+          <h3 class="project-title">CRWN Clothing</h3>
         </div>
         <div class="project">
           <div class="project-image">
-            <img src="https://source.unsplash.com/random/500x500" />
+            <img
+              src="styles/images/thumbnails/ferenc-almasi-pW3TdRsH8yM-unsplash.jpg"
+            />
             <button class="modal-trigger" data-popup-trigger="three">
               View More
             </button>
           </div>
-          <h3 class="project-title">Placeholder Title</h3>
+          <h3 class="project-title">Silent Auction Backend</h3>
         </div>
         <div class="modal hidden" data-popup-modal="one">
           <div class="modal-header">
             <h3>
-              Modal One Title
+              Conway's Game of Life
             </h3>
             <button class="modal-close">
               <i class="fa fa-times" aria-hidden="true"></i>
@@ -180,23 +194,41 @@
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src="https://source.unsplash.com/random/500x500" />
+              <img
+                src="styles/images/game-of-life.PNG"
+                alt="Conway's Game of Life"
+              />
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse similique, quasi quo hic aspernatur sint dolorem, vel
-              accusantium iusto, assumenda adipisci ut cum dolorum molestiae at
-              sed neque distinctio.
+              Conway's Game of Life is a cellular automaton created in 1970 by
+              John Horton Conway. Each square, or "cell", has two states: alive
+              and dead. The current state of each cell is affected by the state
+              of it's neighbors, and by adhering to a few simple rules complex
+              patterns can emerge as the simulation plays out. I wrote this
+              simulation using React in under a week, following these rules, as
+              an excercise in computer science algorithms.
             </p>
-            <a href="https://github.com/LoganSorensen" target="_blank">
-              Github
-            </a>
+            <div class="modal-links">
+              <a
+                href="https://github.com/LoganSorensen/game-of-life"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i>
+                Github
+              </a>
+              <a
+                href="https://logansorensen.github.io/game-of-life/"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+            </div>
           </div>
         </div>
         <div class="modal hidden" data-popup-modal="two">
           <div class="modal-header">
             <h3>
-              Modal Two Title
+              CRWN Clothing
             </h3>
             <button class="modal-close">
               <i class="fa fa-times" aria-hidden="true"></i>
@@ -204,23 +236,30 @@
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src="https://source.unsplash.com/random/500x500" />
+              <img src="styles/images/crwn-clothing-store.PNG" />
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse similique, quasi quo hic aspernatur sint dolorem, vel
-              accusantium iusto, assumenda adipisci ut cum dolorum molestiae at
-              sed neque distinctio.
+              CRWN Clothing is an E-commerce app built using React. This app
+              handles routing between pages using React Router DOM, interfaces
+              with Firebase to handle user authentication, and uses Redux to
+              manage global state. Additionally, I added Stripe integration to
+              process mock payments, to make this a fully functional store.
             </p>
-            <a href="https://github.com/LoganSorensen" target="_blank">
-              Github
-            </a>
+            <div class="modal-links">
+              <a
+                href="https://github.com/LoganSorensen/crwn-clothing"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Github
+              </a>
+            </div>
           </div>
         </div>
         <div class="modal hidden" data-popup-modal="three">
           <div class="modal-header">
             <h3>
-              Modal Three Title
+              Silent Auction Backend
             </h3>
             <button class="modal-close">
               <i class="fa fa-times" aria-hidden="true"></i>
@@ -228,17 +267,29 @@
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src="https://source.unsplash.com/random/500x500" />
+              <img
+                src="styles/images/thumbnails/ferenc-almasi-EJSaEnVvZcg-unsplash.jpg"
+              />
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              esse similique, quasi quo hic aspernatur sint dolorem, vel
-              accusantium iusto, assumenda adipisci ut cum dolorum molestiae at
-              sed neque distinctio.
+              I created this backend for an online auction application I was
+              building with several React developers. Using Node.js, I built a
+              RESTful API for the frontend to interface with. I created a
+              SQLite3 database, which stored information about auctions, bids,
+              and users of the application. Additionally, I implemented user
+              authentication by generating a JWT, and utilized bcrypt.js to hash
+              the user's password. Finally, I added Stripe integration on both
+              the frontend and backend of the application.
             </p>
-            <a href="https://github.com/LoganSorensen" target="_blank">
-              Github
-            </a>
+            <div class="modal-links">
+              <a
+                href="https://github.com/Web26-Silent-Auction-1/BE"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -270,7 +321,9 @@
       </div>
     </section>
     <footer>
-      <div><a href="#intro"><i class="fas fa-angle-double-up"></i></a></div>
+      <div>
+        <a href="#intro"><i class="fas fa-angle-double-up"></i></a>
+      </div>
       <span>Logan Sorensen ©2020</span>
     </footer>
   </body>
