@@ -1,6 +1,7 @@
 .contact-section {
   height: 80vh;
   padding-top: 5%;
+  background-color: @primary-dark;
 
   @media @mobile {
     padding-top: 20%;
@@ -8,6 +9,7 @@
 
   h2 {
     margin-bottom: 2%;
+    color: white;
   }
 
   form {
@@ -15,22 +17,21 @@
     flex-direction: column;
     margin: 0 auto;
     width: 30%;
-
+    
     @media @laptop {
       width: 50%;
     }
-
+    
     @media @mobile {
       width: 90%;
     }
-
+    
     .form-input {
       margin: 0.5%;
       padding: 1%;
-      border: 2px solid black;
-      &:focus {
-        border: 3px solid black;
-      }
+      background-color: #15131f;
+      border: none;
+
 
       @media @laptop {
         font-size: 2rem;
@@ -54,8 +55,7 @@
     text-align: center;
 
     @media @mobile {
-        display: flex;
-        flex-direction: column;
+        width: 50%;
     }
 
     a {
@@ -64,27 +64,19 @@
     }
 
     i {
-      width: 7%;
+
       font-size: 4rem;
-      background-color: @btn-secondary;
-      color: @btn-primary;
-      padding: 2%;
+      background-color: @btn-primary;
+      color: @primary-dark;
+      padding: 2% 2.44%;
       border-radius: 50%;
       border: 5px solid transparent;
 
       &:hover{
           transition: 0.4s ease;
-          border: 5px solid black;
-          color: @btn-secondary;
-          background-color: @btn-primary;
-      }
-
-      @media @laptop {
-          width: 14%;
-      }
-
-      @media @mobile {
-        width: 30%;
+          border: 5px solid white;
+          color: @btn-primary;
+          background-color: @primary-dark;
       }
     }
   }

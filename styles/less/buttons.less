@@ -1,10 +1,17 @@
 .cta {
+  i {
+    transition: 0.2s ease;
+    margin-left: 3%;
+  }
+
   button {
     font-size: 2rem;
-    background-color: @btn-primary;
+    background-color: transparent;
+    color: @btn-primary;
     width: 100%;
     padding: 2%;
-    border: 2px solid @btn-secondary;
+    border: 2px solid @btn-primary;
+    font-weight: bold;
 
     @media @laptop {
       font-size: 2.5rem;
@@ -12,8 +19,14 @@
 
     &:hover {
       transition: 0.4s ease;
-      color: @btn-primary;
-      background-color: @btn-secondary;
+      color: @btn-secondary;
+      background-color: @btn-primary;
+    }
+
+    &:hover i {
+      transition: 0.2s ease;
+      color: @btn-secondary;
+      transform: rotate(90deg);
     }
   }
 }
@@ -22,7 +35,8 @@
   button {
     width: 30%;
     margin: 1% 0 0 69.5%;
-    border: 2px solid @btn-secondary;
+    color: @btn-primary;
+    border: 2px solid @btn-primary;
     background-color: transparent;
     font-size: 2rem;
 
@@ -66,6 +80,7 @@
       padding: 2%;
     }
   }
+
   .modal-close {
     font-size: 2rem;
     background: transparent;

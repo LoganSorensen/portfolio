@@ -1,12 +1,19 @@
-// intro styles
 .intro {
   height: 100vh;
+  background-color: transparent;
 
+  canvas {
+    position: absolute;
+    background-color: @primary-dark;
+    height: 100vh;
+    z-index: -1;
+  }
   .cta {
     display: flex;
     flex-direction: column;
     margin: 0% auto;
     padding-top: 40vh;
+    color: white;
 
     @media @mobile {
       text-align: center;
@@ -36,23 +43,5 @@
         margin-top: 8%;
       }
     }
-  }
-}
-
-// footer styles
-footer {
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  background-color: black;
-  padding: 1%;
-
-  @media @laptop {
-    font-size: 2.5rem;
-    padding: 1.5%;
-  }
-
-  a {
-    color: white;
   }
 }

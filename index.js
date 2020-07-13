@@ -1,4 +1,7 @@
-// project modal functions
+// Link Highlighting
+
+
+// Project Modal Functions
 const modalTriggers = document.querySelectorAll(".modal-trigger");
 const modalCloseTrigger = document.querySelector(".modal-close");
 const bodyBlackout = document.querySelector(".body-blackout");
@@ -10,6 +13,8 @@ modalTriggers.forEach((trigger) => {
     const popupModal = document.querySelector(
       `[data-popup-modal="${popupTrigger}"]`
     );
+
+    console.log(navPos)
 
     popupModal.classList.add("visible");
     bodyBlackout.classList.add("is-blacked-out");
@@ -29,7 +34,7 @@ modalTriggers.forEach((trigger) => {
   });
 });
 
-// skills accordion functions
+// Skills Accordion
 
 const accordionTriggers = document.querySelectorAll(".accordion-trigger");
 const accordions = document.querySelectorAll(".skill-content")

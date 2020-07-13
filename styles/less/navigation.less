@@ -1,5 +1,5 @@
 nav {
-  background-color: black;
+  background-color: @primary-dark;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -8,7 +8,7 @@ nav {
 
   .nav-links {
     margin-left: 5%;
-    padding: 1% 0;
+    // padding: 1% 0;
 
     @media @laptop {
       display: flex;
@@ -18,7 +18,10 @@ nav {
     a {
       color: white;
       font-size: 2rem;
-      padding-right: 5%;
+      margin-right: 5%;
+      outline: none;
+      display: inline-block;
+      position: relative;
 
       @media @laptop {
         font-size: 2.5rem;
@@ -26,8 +29,120 @@ nav {
 
       @media @mobile {
         font-size: 1.9rem;
-        padding:5% 0;
+        padding: 5% 0;
       }
     }
   }
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.nav-links a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+.nav-links a::before,
+.nav-links a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  pointer-events: none;
+  
+  @media @mobile {
+    content: none;
+  }
+}
+
+.nav-links a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.nav-links a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover::after,
+.nav-links a:focus::before,
+.nav-links a:focus::after {
+	opacity: 1;
+}
+
+.nav-links a:hover::before,
+.nav-links a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+
+.nav-links-focused-left {
+  opacity: 1;
+  left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.nav-links-focused-right {
+  opacity: 1;
+  right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
 }
