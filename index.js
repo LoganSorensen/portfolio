@@ -14,8 +14,6 @@ modalTriggers.forEach((trigger) => {
       `[data-popup-modal="${popupTrigger}"]`
     );
 
-    console.log(navPos)
-
     popupModal.classList.add("visible");
     bodyBlackout.classList.add("is-blacked-out");
     body.classList.add("no-scroll");

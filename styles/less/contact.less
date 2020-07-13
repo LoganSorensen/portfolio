@@ -17,21 +17,20 @@
     flex-direction: column;
     margin: 0 auto;
     width: 30%;
-    
+
     @media @laptop {
       width: 50%;
     }
-    
+
     @media @mobile {
       width: 90%;
     }
-    
+
     .form-input {
       margin: 0.5%;
       padding: 1%;
       background-color: #15131f;
       border: none;
-
 
       @media @laptop {
         font-size: 2rem;
@@ -55,16 +54,14 @@
     text-align: center;
 
     @media @mobile {
-        width: 50%;
+      width: 50%;
     }
 
     a {
       margin: 5%;
-
     }
 
     i {
-
       font-size: 4rem;
       background-color: @btn-primary;
       color: @primary-dark;
@@ -72,11 +69,13 @@
       border-radius: 50%;
       border: 5px solid transparent;
 
-      &:hover{
-          transition: 0.4s ease;
-          border: 5px solid white;
-          color: @btn-primary;
-          background-color: @primary-dark;
+      &:hover {
+        -webkit-transition: 0.4s ease;
+        -moz-transition: 0.4s ease;
+        transition: 0.4s ease;
+        border: 5px solid white;
+        color: @btn-primary;
+        background-color: @primary-dark;
       }
     }
   }

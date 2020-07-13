@@ -224,11 +224,15 @@ h2 {
   }
 }
 .cta button:hover {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   color: black;
   background-color: white;
 }
 .cta button:hover i {
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
   transition: 0.2s ease;
   color: black;
   transform: rotate(90deg);
@@ -255,6 +259,8 @@ h2 {
   }
 }
 .contact-section button:hover {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   color: white;
   background-color: black;
@@ -269,6 +275,8 @@ h2 {
   width: 20%;
 }
 .modal a:hover {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   background-color: white;
   color: black;
@@ -355,7 +363,7 @@ nav a:focus {
   width: 45px;
   height: 2px;
   background: #fff;
-  content: '';
+  content: "";
   opacity: 0.2;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -573,12 +581,16 @@ nav a:focus {
   margin: 0 auto;
 }
 .about-section .skills-section .skill .open-arrow {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   margin-right: 1%;
   user-select: none;
 }
 .about-section .skills-section .skill .inverted {
   transform: rotate(0.5turn);
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 .about-section .skills-section .skill-content {
@@ -616,6 +628,8 @@ nav a:focus {
 }
 .projects-section .project:hover img {
   opacity: 0.3;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 @media (max-width: 1024px) {
@@ -652,6 +666,8 @@ nav a:focus {
   font-size: 2rem;
 }
 .projects-section .project .project-image button:hover {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   color: white;
   background-color: black;
@@ -816,6 +832,8 @@ nav a:focus {
   border: 5px solid transparent;
 }
 .contact-section .links i:hover {
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
   transition: 0.4s ease;
   border: 5px solid white;
   color: white;
