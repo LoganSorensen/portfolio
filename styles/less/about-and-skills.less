@@ -1,5 +1,5 @@
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
 
   @media @mobile {
     padding-top: 20%;
@@ -20,8 +20,9 @@
   .about-content {
     display: flex;
     flex-direction: column;
-    margin: 5% 0% 5% 15%;
-    width: 40%;
+    align-items: center;
+    margin: 5% 20% 5% 15%;
+    width: 20%;
 
     @media @tablet-landscape {
       align-items: center;
@@ -62,7 +63,7 @@
     }
     
     .who-am-i {
-      width: 50%;
+      width: 100%;
       text-align: center;
       
       @media @tablet {
@@ -123,6 +124,10 @@
         font-size: 3rem;
       }
 
+      @media @mobile {
+        font-size: 1.2rem;
+      }
+
       .skill-name {
         display: flex;
         align-items: center;
@@ -143,12 +148,20 @@
           margin: 0 6% 0 2%;
         }
 
+        @media @mobile {
+          margin: 0 8% 0 2%;
+        }
+
         i {
           margin: 0 auto;
           font-size: 3.5rem;
 
           @media @tablet {
             font-size: 3rem;
+          }
+
+          @media @mobile {
+            font-size: 2.5rem;
           }
         }
       }

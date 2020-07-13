@@ -130,6 +130,8 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 100%;
 }
 @media (max-width: 500px) {
   html {
@@ -139,6 +141,7 @@ html {
 body {
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -311,6 +314,12 @@ section {
     padding: 2%;
   }
 }
+@media (max-width: 500px) {
+  .modal a {
+    font-size: 2rem;
+    width: 45%;
+  }
+}
 .modal .modal-close {
   font-size: 2rem;
   background: transparent;
@@ -322,15 +331,22 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
+  max-width: 100%;
   z-index: 1;
 }
 nav .nav-links {
   margin-left: 5%;
+  max-width: 100%;
 }
 @media (max-width: 1024px) {
   nav .nav-links {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    margin: 0;
   }
 }
 nav .nav-links a {
@@ -348,8 +364,10 @@ nav .nav-links a {
 }
 @media (max-width: 500px) {
   nav .nav-links a {
-    font-size: 1.9rem;
-    padding: 5% 0;
+    width: 15%;
+    padding: 0;
+    font-size: 1.2rem;
+    margin: 0;
   }
 }
 *,
@@ -455,7 +473,7 @@ nav a:focus {
   transform: rotate(0deg) translateX(50%);
 }
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
 }
 @media (max-width: 500px) {
   .about-section {
@@ -477,8 +495,9 @@ nav a:focus {
 .about-section .about-content {
   display: flex;
   flex-direction: column;
-  margin: 5% 0% 5% 15%;
-  width: 40%;
+  align-items: center;
+  margin: 5% 20% 5% 15%;
+  width: 20%;
 }
 @media (max-width: 1400px) {
   .about-section .about-content {
@@ -519,7 +538,7 @@ nav a:focus {
   text-align: center;
 }
 .about-section .about-content .who-am-i {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 @media (max-width: 1024px) {
@@ -581,6 +600,11 @@ nav a:focus {
     font-size: 3rem;
   }
 }
+@media (max-width: 500px) {
+  .about-section .skills-section .skill {
+    font-size: 1.2rem;
+  }
+}
 .about-section .skills-section .skill .skill-name {
   display: flex;
   align-items: center;
@@ -601,6 +625,11 @@ nav a:focus {
     margin: 0 6% 0 2%;
   }
 }
+@media (max-width: 500px) {
+  .about-section .skills-section .skill .icon-cont {
+    margin: 0 8% 0 2%;
+  }
+}
 .about-section .skills-section .skill .icon-cont i {
   margin: 0 auto;
   font-size: 3.5rem;
@@ -608,6 +637,11 @@ nav a:focus {
 @media (max-width: 1024px) {
   .about-section .skills-section .skill .icon-cont i {
     font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-section .skills-section .skill .icon-cont i {
+    font-size: 2.5rem;
   }
 }
 .about-section .skills-section .skill .open-arrow {
@@ -772,6 +806,12 @@ nav a:focus {
     font-size: 4rem;
   }
 }
+@media (max-width: 500px) {
+  .modal .modal-header h3,
+  .modal .modal-header i {
+    font-size: 2.5rem;
+  }
+}
 .modal .modal-content {
   display: flex;
   flex-direction: column;
@@ -797,6 +837,11 @@ nav a:focus {
 @media (max-width: 1024px) {
   .modal .modal-content p {
     font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .modal .modal-content p {
+    font-size: 2rem;
   }
 }
 .modal .modal-content .modal-links {
@@ -871,6 +916,7 @@ nav a:focus {
 @media (max-width: 500px) {
   .contact-section form .form-input {
     margin: 3% 0;
+    font-size: 2rem;
   }
 }
 .contact-section form textarea {
@@ -932,6 +978,11 @@ footer {
   footer {
     font-size: 4rem;
     padding: 3% 3% 5%;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 2rem;
   }
 }
 footer a {
