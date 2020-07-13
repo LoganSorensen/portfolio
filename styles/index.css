@@ -157,6 +157,12 @@ h2 {
 .no-scroll {
   overflow: hidden;
 }
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
 .intro {
   height: 100vh;
   background-color: transparent;
@@ -682,12 +688,6 @@ nav a:focus {
   padding: 2%;
   font-size: 3rem;
 }
-.hidden {
-  display: none;
-}
-.visible {
-  display: block;
-}
 .modal {
   position: fixed;
   height: 80vh;
@@ -760,7 +760,7 @@ nav a:focus {
   display: block;
 }
 .contact-section {
-  height: 80vh;
+  height: 90vh;
   padding-top: 5%;
   background-color: #100e17;
 }
@@ -794,6 +794,8 @@ nav a:focus {
   padding: 1%;
   background-color: #15131f;
   border: none;
+  caret-color: white;
+  color: white;
 }
 @media (max-width: 1024px) {
   .contact-section form .form-input {
