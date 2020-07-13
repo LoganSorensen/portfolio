@@ -163,9 +163,23 @@ h2 {
 .visible {
   display: block;
 }
+section {
+  padding-top: 5%;
+}
+@media (max-width: 500px) {
+  section {
+    height: auto;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 1400px) {
+  section {
+    padding-top: 10%;
+  }
+}
 .intro {
   height: 100vh;
-  background-color: transparent;
+  padding: 0;
 }
 .intro canvas {
   position: absolute;
@@ -199,6 +213,11 @@ h2 {
   text-decoration: none;
   margin: 2% auto 0;
   width: 15%;
+}
+@media (max-width: 1400px) {
+  .intro .cta a {
+    width: 25%;
+  }
 }
 @media (max-width: 1024px) {
   .intro .cta a {
@@ -251,7 +270,7 @@ h2 {
   background-color: transparent;
   font-size: 2rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact-section button {
     font-size: 2.5rem;
     padding: 1%;
@@ -259,7 +278,6 @@ h2 {
 }
 @media (max-width: 500px) {
   .contact-section button {
-    font-size: 2rem;
     width: 100%;
     margin: 1% 0;
   }
@@ -287,7 +305,7 @@ h2 {
   background-color: white;
   color: black;
 }
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
   .modal a {
     width: 40%;
     padding: 2%;
@@ -325,7 +343,7 @@ nav .nav-links a {
 }
 @media (max-width: 1024px) {
   nav .nav-links a {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
   }
 }
 @media (max-width: 500px) {
@@ -438,7 +456,6 @@ nav a:focus {
 }
 .about-section {
   height: 100vh;
-  padding-top: 5%;
 }
 @media (max-width: 500px) {
   .about-section {
@@ -454,10 +471,6 @@ nav a:focus {
     align-items: center;
     padding: 0 2%;
     margin-top: 5%;
-  }
-}
-@media (max-width: 500px) {
-  .about-section .about-and-skills {
     flex-direction: column;
   }
 }
@@ -467,11 +480,16 @@ nav a:focus {
   margin: 5% 0% 5% 15%;
   width: 40%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .about-section .about-content {
     align-items: center;
-    margin: 0;
+    margin: 10% 0;
     width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .about-section .about-content {
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
@@ -490,11 +508,10 @@ nav a:focus {
   display: flex;
   align-items: center;
   padding: 5%;
-  margin: 0 0 3% 7%;
+  margin-bottom: 3%;
 }
 @media (max-width: 1024px) {
   .about-section .about-content .profile-picture-cont {
-    margin: 0 0 7%;
     padding: 0;
   }
 }
@@ -515,12 +532,12 @@ nav a:focus {
 }
 @media (max-width: 1024px) {
   .about-section .about-content .who-am-i h3 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 1024px) {
   .about-section .about-content .who-am-i p {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 @media (max-width: 500px) {
@@ -532,9 +549,15 @@ nav a:focus {
   width: 35%;
   margin-top: 10%;
 }
+@media (max-width: 1400px) {
+  .about-section .skills-section {
+    width: 60%;
+    margin-right: 5%;
+  }
+}
 @media (max-width: 1024px) {
   .about-section .skills-section {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -553,6 +576,11 @@ nav a:focus {
   justify-content: space-between;
   cursor: pointer;
 }
+@media (max-width: 1400px) {
+  .about-section .skills-section .skill {
+    font-size: 3rem;
+  }
+}
 .about-section .skills-section .skill .skill-name {
   display: flex;
   align-items: center;
@@ -568,7 +596,7 @@ nav a:focus {
   user-select: none;
   margin: 0 2% 0 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
   .about-section .skills-section .skill .icon-cont {
     margin: 0 6% 0 2%;
   }
@@ -581,10 +609,6 @@ nav a:focus {
   .about-section .skills-section .skill .icon-cont i {
     font-size: 3rem;
   }
-}
-.about-section .skills-section .skill .icon-cont img {
-  width: 80%;
-  margin: 0 auto;
 }
 .about-section .skills-section .skill .open-arrow {
   -webkit-transition: 0.4s ease;
@@ -604,24 +628,27 @@ nav a:focus {
   padding: 2%;
   font-size: 1.8rem;
 }
+@media (max-width: 1400px) {
+  .about-section .skills-section .skill-content {
+    font-size: 2rem;
+  }
+}
 .projects-section {
   min-height: 100vh;
-  padding-top: 5%;
-}
-@media (max-width: 500px) {
-  .projects-section {
-    height: auto;
-    padding-top: 20%;
-  }
 }
 .projects-section .projects {
   width: 80%;
-  margin: 0 auto;
+  margin: 5% auto 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 5%;
   position: relative;
+}
+@media (max-width: 1400px) {
+  .projects-section .projects {
+    width: 90%;
+  }
 }
 .projects-section .project {
   text-align: center;
@@ -638,9 +665,14 @@ nav a:focus {
   -moz-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+@media (max-width: 1400px) {
+  .projects-section .project {
+    width: 45%;
+  }
+}
 @media (max-width: 1024px) {
   .projects-section .project {
-    width: 40%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -688,6 +720,11 @@ nav a:focus {
   padding: 2%;
   font-size: 3rem;
 }
+@media (max-width: 1024px) {
+  .projects-section .project h3 {
+    font-size: 4rem;
+  }
+}
 .modal {
   position: fixed;
   height: 80vh;
@@ -697,6 +734,11 @@ nav a:focus {
   z-index: 2;
   background-color: white;
   overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .modal {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .modal {
@@ -708,37 +750,54 @@ nav a:focus {
   justify-content: space-between;
   padding: 2%;
   border-bottom: 2px solid black;
-  height: 5%;
+  height: 9%;
+}
+@media (max-width: 1024px) {
+  .modal .modal-header {
+    height: 7%;
+  }
+}
+@media (max-width: 500px) {
+  .modal .modal-header {
+    height: 9%;
+  }
 }
 .modal .modal-header h3,
 .modal .modal-header i {
   font-size: 3rem;
+}
+@media (max-width: 1024px) {
+  .modal .modal-header h3,
+  .modal .modal-header i {
+    font-size: 4rem;
+  }
 }
 .modal .modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-  height: 85%;
+  height: 90%;
   padding-bottom: 10%;
 }
 .modal .modal-content .image-cont {
-  width: 100%;
+  width: 80%;
+  height: 80%;
   text-align: center;
 }
-@media (max-width: 500px) {
-  .modal .modal-content .image-cont {
-    height: 50vh;
-    overflow: hidden;
-  }
-}
 .modal .modal-content .image-cont img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
 }
 .modal .modal-content p {
   margin: 2% 5%;
   font-size: 1.8rem;
   line-height: 1.5em;
+}
+@media (max-width: 1024px) {
+  .modal .modal-content p {
+    font-size: 3rem;
+  }
 }
 .modal .modal-content .modal-links {
   display: flex;
@@ -764,7 +823,7 @@ nav a:focus {
   padding-top: 5%;
   background-color: #100e17;
 }
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
   .contact-section {
     padding-top: 20%;
   }
@@ -779,12 +838,12 @@ nav a:focus {
   margin: 0 auto;
   width: 30%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact-section form {
     width: 50%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .contact-section form {
     width: 90%;
   }
@@ -797,11 +856,16 @@ nav a:focus {
   caret-color: white;
   color: white;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact-section form .form-input {
     font-size: 2rem;
     margin: 1%;
     padding: 1.5%;
+  }
+}
+@media (max-width: 1024px) {
+  .contact-section form .form-input {
+    font-size: 3rem;
   }
 }
 @media (max-width: 500px) {
@@ -811,6 +875,11 @@ nav a:focus {
 }
 .contact-section form textarea {
   min-height: 10vh;
+}
+@media (max-width: 1400px) {
+  .contact-section form textarea {
+    min-height: 20vh;
+  }
 }
 .contact-section .links {
   margin: 8% auto;
@@ -833,6 +902,17 @@ nav a:focus {
   border-radius: 50%;
   border: 5px solid transparent;
 }
+@media (max-width: 1024px) {
+  .contact-section .links i {
+    font-size: 8rem;
+    padding: 3% 4.2%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-section .links i {
+    font-size: 5rem;
+  }
+}
 .contact-section .links i:hover {
   -webkit-transition: 0.4s ease;
   -moz-transition: 0.4s ease;
@@ -850,8 +930,8 @@ footer {
 }
 @media (max-width: 1024px) {
   footer {
-    font-size: 2.5rem;
-    padding: 1.5%;
+    font-size: 4rem;
+    padding: 3% 3% 5%;
   }
 }
 footer a {

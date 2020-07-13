@@ -3,7 +3,7 @@
   padding-top: 5%;
   background-color: @primary-dark;
 
-  @media @mobile {
+  @media @tablet-landscape {
     padding-top: 20%;
   }
 
@@ -18,13 +18,14 @@
     margin: 0 auto;
     width: 30%;
 
-    @media @laptop {
+    @media @tablet-landscape {
       width: 50%;
     }
 
-    @media @mobile {
+    @media @tablet {
       width: 90%;
     }
+
 
     .form-input {
       margin: 0.5%;
@@ -34,10 +35,14 @@
       caret-color: white;
       color: white;
 
-      @media @laptop {
+      @media @tablet-landscape {
         font-size: 2rem;
         margin: 1%;
         padding: 1.5%;
+      }
+
+      @media @tablet {
+        font-size: 3rem;
       }
 
       @media @mobile {
@@ -47,6 +52,10 @@
 
     textarea {
       min-height: 10vh;
+
+      @media @tablet-landscape {
+        min-height: 20vh;
+      }
     }
   }
 
@@ -70,6 +79,15 @@
       padding: 2% 2.44%;
       border-radius: 50%;
       border: 5px solid transparent;
+
+      @media @tablet {
+        font-size: 8rem;
+        padding: 3% 4.2%;
+      }
+
+      @media @mobile {
+        font-size: 5rem;
+      }
 
       &:hover {
         -webkit-transition: 0.4s ease;

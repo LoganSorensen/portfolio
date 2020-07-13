@@ -1,6 +1,7 @@
 .intro {
   height: 100vh;
-  background-color: transparent;
+  // background-color: transparent;
+  padding: 0;
 
   canvas {
     position: absolute;
@@ -35,7 +36,11 @@
       margin: 2% auto 0;
       width: 15%;
 
-      @media @laptop {
+      @media @tablet-landscape {
+        width: 25%;
+      }
+
+      @media @tablet {
         width: 50%;
       }
 
