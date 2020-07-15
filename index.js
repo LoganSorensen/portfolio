@@ -16,6 +16,7 @@ const widthCheck = (width) => {
     })
   } else {
     hamburger.classList.remove("visible")
+    navItemsCont.classList.remove('hidden')
   }
 
 }
