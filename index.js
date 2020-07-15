@@ -1,5 +1,5 @@
 // Navigation
-const mobileWidth = window.matchMedia("(max-width: 900px")
+const mobileWidth = window.matchMedia("(max-width: 900px)")
 const navBar = document.getElementsByTagName("nav")[0]
 const hamburger = document.querySelector(".fa-bars")
 const navItems = document.querySelectorAll(".nav-item")
@@ -24,6 +24,7 @@ widthCheck(mobileWidth)
 mobileWidth.addListener(widthCheck)
 
 hamburger.addEventListener("click", () => {
+  console.log('clicked')
   navItemsCont.classList.toggle("hidden")
 })
 
