@@ -381,15 +381,15 @@ nav .nav-links a {
 @media (max-width: 1024px) {
   nav .nav-links a {
     font-size: 3.2rem;
-    margin: 3%;
+    margin: 3% 2%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   nav .nav-links a {
     width: 100%;
     padding: 0;
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 2.5rem;
+    margin: 1%;
     text-align: center;
   }
 }
@@ -410,7 +410,6 @@ nav a {
   letter-spacing: 1px;
   font-weight: 400;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-  font-size: 1.35em;
 }
 nav a:hover,
 nav a:focus {
@@ -434,7 +433,7 @@ nav a:focus {
   transition: all 0.3s;
   pointer-events: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .nav-links a::before,
   .nav-links a::after {
     content: none;
@@ -509,7 +508,6 @@ nav a:focus {
 @media (max-width: 1024px) {
   .about-section .about-and-skills {
     align-items: center;
-    padding: 0 2%;
     margin-top: 5%;
     flex-direction: column;
   }
@@ -890,7 +888,7 @@ nav a:focus {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 30%;
+  width: 40%;
 }
 @media (max-width: 1400px) {
   .contact-section form {
@@ -909,6 +907,7 @@ nav a:focus {
   border: none;
   caret-color: white;
   color: white;
+  font-size: 1.8rem;
 }
 @media (max-width: 1400px) {
   .contact-section form .form-input {
@@ -930,6 +929,7 @@ nav a:focus {
 }
 .contact-section form textarea {
   min-height: 10vh;
+  max-height: 30vh;
 }
 @media (max-width: 1400px) {
   .contact-section form textarea {
@@ -937,7 +937,7 @@ nav a:focus {
   }
 }
 .contact-section .links {
-  margin: 8% auto;
+  margin: 8% auto 0;
   width: 30%;
   text-align: center;
 }
