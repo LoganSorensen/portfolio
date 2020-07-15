@@ -138,10 +138,13 @@ html {
     scroll-behavior: auto;
   }
 }
+* {
+  max-width: 100%;
+}
 body {
   overflow-x: hidden;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -169,15 +172,20 @@ h2 {
 section {
   padding-top: 5%;
 }
+@media (max-width: 1400px) {
+  section {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 1024px) {
+  section {
+    padding-top: 15%;
+  }
+}
 @media (max-width: 500px) {
   section {
     height: auto;
     padding-top: 20%;
-  }
-}
-@media (max-width: 1400px) {
-  section {
-    padding-top: 10%;
   }
 }
 .intro {
@@ -206,6 +214,7 @@ section {
 .intro .cta p {
   margin: 0 auto;
   font-size: 4.5rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .intro .cta p {
@@ -325,6 +334,17 @@ section {
   background: transparent;
   border: none;
 }
+.hamburger-cont {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #100e17;
+}
+.hamburger-cont i {
+  color: white;
+  font-size: 6rem;
+  margin-right: 2%;
+  padding: 2%;
+}
 nav {
   background-color: #100e17;
   position: -webkit-sticky;
@@ -337,11 +357,12 @@ nav {
 nav .nav-links {
   margin-left: 5%;
   max-width: 100%;
+  padding: 1% 0;
 }
 @media (max-width: 1024px) {
   nav .nav-links {
-    display: flex;
-    justify-content: space-evenly;
+    margin: 0;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -360,14 +381,16 @@ nav .nav-links a {
 @media (max-width: 1024px) {
   nav .nav-links a {
     font-size: 3.2rem;
+    margin: 3%;
   }
 }
 @media (max-width: 500px) {
   nav .nav-links a {
-    width: 15%;
+    width: 100%;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0;
+    text-align: center;
   }
 }
 *,
@@ -380,7 +403,6 @@ nav .nav-links a {
 nav a {
   position: relative;
   display: inline-block;
-  margin: 15px 25px;
   outline: none;
   color: #fff;
   text-decoration: none;
@@ -597,19 +619,19 @@ nav a:focus {
 }
 @media (max-width: 1400px) {
   .about-section .skills-section .skill {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 500px) {
   .about-section .skills-section .skill {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 .about-section .skills-section .skill .skill-name {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 50%;
+  width: 90%;
 }
 .about-section .skills-section .skill .icon-cont {
   display: flex;
@@ -620,14 +642,9 @@ nav a:focus {
   user-select: none;
   margin: 0 2% 0 1%;
 }
-@media (max-width: 1400px) {
-  .about-section .skills-section .skill .icon-cont {
-    margin: 0 6% 0 2%;
-  }
-}
 @media (max-width: 500px) {
   .about-section .skills-section .skill .icon-cont {
-    margin: 0 8% 0 2%;
+    margin-right: 2%;
   }
 }
 .about-section .skills-section .skill .icon-cont i {
@@ -784,17 +801,10 @@ nav a:focus {
   justify-content: space-between;
   padding: 2%;
   border-bottom: 2px solid black;
-  height: 9%;
 }
 @media (max-width: 1024px) {
-  .modal .modal-header {
-    height: 7%;
-  }
 }
 @media (max-width: 500px) {
-  .modal .modal-header {
-    height: 9%;
-  }
 }
 .modal .modal-header h3,
 .modal .modal-header i {
@@ -865,12 +875,11 @@ nav a:focus {
 }
 .contact-section {
   height: 90vh;
-  padding-top: 5%;
   background-color: #100e17;
 }
 @media (max-width: 1400px) {
   .contact-section {
-    padding-top: 20%;
+    height: 120vh;
   }
 }
 .contact-section h2 {
@@ -885,7 +894,7 @@ nav a:focus {
 }
 @media (max-width: 1400px) {
   .contact-section form {
-    width: 50%;
+    width: 60%;
   }
 }
 @media (max-width: 1024px) {
@@ -932,9 +941,10 @@ nav a:focus {
   width: 30%;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .contact-section .links {
     width: 50%;
+    padding-bottom: 10%;
   }
 }
 .contact-section .links a {
@@ -950,8 +960,8 @@ nav a:focus {
 }
 @media (max-width: 1024px) {
   .contact-section .links i {
-    font-size: 8rem;
-    padding: 3% 4.2%;
+    font-size: 5rem;
+    padding: 2% 2.6%;
   }
 }
 @media (max-width: 500px) {

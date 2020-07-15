@@ -10,10 +10,15 @@ html {
   }
 }
 
+* {
+  max-width: 100%;
+  // overflow: hidden;
+}
+
 body {
   overflow-x: hidden;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -49,12 +54,16 @@ h2 {
 section {
   padding-top: 5%;
 
+  
+  @media @tablet-landscape {
+    padding-top: 10%;
+  }
+        @media @tablet {
+          padding-top: 15%;
+        }
+
   @media @mobile {
     height: auto;
     padding-top: 20%;
-  }
-
-  @media @tablet-landscape {
-    padding-top: 10%;
   }
 }

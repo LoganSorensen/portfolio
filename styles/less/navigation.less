@@ -1,3 +1,20 @@
+.hamburger-cont {
+  display: flex;
+  justify-content: flex-end;
+  background-color: @primary-dark;
+  // position: -webkit-sticky;
+  // position: sticky;
+  // top: 0;
+  // z-index: 1;
+
+  i {
+    color: white;
+    font-size: 6rem;
+    margin-right: 2%;
+    padding: 2%;
+  }
+}
+
 nav {
   background-color: @primary-dark;
   position: -webkit-sticky;
@@ -10,10 +27,11 @@ nav {
   .nav-links {
     margin-left: 5%;
     max-width: 100%;
+    padding: 1% 0;
 
     @media @tablet {
-      display: flex;
-      justify-content: space-evenly;
+      margin: 0;
+      text-align: center;
     }
 
     @media @mobile {
@@ -30,13 +48,15 @@ nav {
 
       @media @tablet {
         font-size: 3.2rem;
+        margin: 3%;
       }
 
       @media @mobile {
-        width: 15%;
+        width: 100%;
         padding: 0;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 0;
+        text-align: center;
       }
     }
   }
@@ -53,7 +73,7 @@ nav {
 nav a {
   position: relative;
   display: inline-block;
-  margin: 15px 25px;
+  // margin: 15px 25px;
   outline: none;
   color: #fff;
   text-decoration: none;

@@ -1,4 +1,34 @@
-// Link Highlighting
+// Navigation
+const mobileWidth = window.matchMedia("(max-width: 500px")
+const navBar = document.getElementsByTagName("nav")[0]
+const hamburger = document.querySelector(".fa-bars")
+const navItems = document.querySelectorAll(".nav-item")
+const navItemsCont = document.querySelector(".nav-links")
+
+const widthCheck = (width) => {
+  if (width.matches) {
+    hamburger.classList.add("visible")
+    navItemsCont.classList.add("hidden")
+    navItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // console.log('firing')
+        navItemsCont.classList.toggle('hidden')
+      })
+    })
+  } else {
+    hamburger.classList.remove("visible")
+  }
+
+}
+
+widthCheck(mobileWidth)
+mobileWidth.addListener(widthCheck)
+
+hamburger.addEventListener("click", () => {
+  navItemsCont.classList.toggle("hidden")
+})
+
+
 
 
 // Project Modal Functions
