@@ -11,7 +11,6 @@ const widthCheck = (width) => {
     navItemsCont.classList.add("hidden")
     navItems.forEach((item) => {
       item.addEventListener("click", () => {
-        // console.log('firing')
         navItemsCont.classList.toggle('hidden')
       })
     })
