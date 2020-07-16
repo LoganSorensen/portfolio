@@ -14,6 +14,9 @@ const widthCheck = (width) => {
         navItemsCont.classList.toggle('hidden')
       })
     })
+    hamburger.addEventListener("click", () => {
+      navItemsCont.classList.toggle("hidden")
+    })
   } else {
     hamburger.classList.remove("visible")
     navItemsCont.classList.remove('hidden')
@@ -24,10 +27,6 @@ const widthCheck = (width) => {
 widthCheck(mobileWidth)
 mobileWidth.addListener(widthCheck)
 
-hamburger.addEventListener("click", () => {
-  console.log('clicked')
-  navItemsCont.classList.toggle("hidden")
-})
 
 
 
