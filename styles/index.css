@@ -586,7 +586,7 @@ nav a:focus {
 }
 .about-section .skills-section {
   width: 35%;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 @media (max-width: 1400px) {
   .about-section .skills-section {
@@ -623,6 +623,7 @@ nav a:focus {
 @media (max-width: 500px) {
   .about-section .skills-section .skill {
     font-size: 2rem;
+    height: 6vh;
   }
 }
 .about-section .skills-section .skill .skill-name {
