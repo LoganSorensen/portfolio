@@ -268,9 +268,9 @@ section {
   background-color: white;
 }
 .cta button:hover i {
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease;
   color: black;
   transform: rotate(90deg);
 }
@@ -298,8 +298,8 @@ section {
   -webkit-transition: 0.4s ease;
   -moz-transition: 0.4s ease;
   transition: 0.4s ease;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 .modal a {
   background-color: black;
@@ -574,6 +574,9 @@ nav a:focus {
     font-size: 4rem;
   }
 }
+.about-section .about-content .who-am-i p {
+  line-height: 1.4;
+}
 @media (max-width: 1024px) {
   .about-section .about-content .who-am-i p {
     font-size: 3rem;
@@ -801,10 +804,6 @@ nav a:focus {
   padding: 2%;
   border-bottom: 2px solid black;
 }
-@media (max-width: 1024px) {
-}
-@media (max-width: 500px) {
-}
 .modal .modal-header h3,
 .modal .modal-header i {
   font-size: 3rem;
@@ -977,6 +976,7 @@ nav a:focus {
   border: 5px solid white;
   color: white;
   background-color: #100e17;
+  transform: rotateY(360deg);
 }
 footer {
   text-align: center;
