@@ -522,7 +522,7 @@ nav a:focus {
 @media (max-width: 1400px) {
   .about-section .about-content {
     align-items: center;
-    margin: 10% 0;
+    margin: 10% 5%;
     width: 60%;
   }
 }
@@ -539,23 +539,15 @@ nav a:focus {
 .about-section .about-content p {
   font-size: 2rem;
 }
-.about-section .about-content .profile-picture-cont {
-  background-color: lightgray;
-  width: 200px;
-  height: 200px;
+.about-section .about-content img {
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  padding: 5%;
-  margin-bottom: 3%;
+  width: 80%;
+  margin-bottom: 5%;
 }
-@media (max-width: 1024px) {
-  .about-section .about-content .profile-picture-cont {
-    padding: 0;
+@media (max-width: 1400px) {
+  .about-section .about-content img {
+    width: 50%;
   }
-}
-.about-section .about-content .profile-picture-cont p {
-  text-align: center;
 }
 .about-section .about-content .who-am-i {
   width: 100%;
@@ -595,6 +587,7 @@ nav a:focus {
   .about-section .skills-section {
     width: 60%;
     margin-right: 5%;
+    margin-top: 15%;
   }
 }
 @media (max-width: 1024px) {
@@ -621,6 +614,7 @@ nav a:focus {
 @media (max-width: 1400px) {
   .about-section .skills-section .skill {
     font-size: 2.5rem;
+    height: 5vh;
   }
 }
 @media (max-width: 500px) {
