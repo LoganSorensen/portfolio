@@ -170,7 +170,7 @@ h2 {
   display: block;
 }
 section {
-  padding-top: 5%;
+  padding-top: 7%;
 }
 @media (max-width: 1400px) {
   section {
@@ -794,7 +794,9 @@ nav a:focus {
 }
 .modal .modal-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 2%;
   border-bottom: 2px solid black;
 }
@@ -813,6 +815,18 @@ nav a:focus {
   .modal .modal-header i {
     font-size: 2.5rem;
   }
+}
+.modal .modal-header .modal-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal .modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2%;
 }
 .modal .modal-content {
   display: flex;
@@ -845,12 +859,6 @@ nav a:focus {
   .modal .modal-content p {
     font-size: 2rem;
   }
-}
-.modal .modal-content .modal-links {
-  display: flex;
-  justify-content: space-evenly;
-  width: 60%;
-  margin: 0 auto;
 }
 .body-blackout {
   position: fixed;

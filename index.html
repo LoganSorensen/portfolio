@@ -64,7 +64,7 @@
             I'm very comfortable using HTML and CSS to create the layout of a
             page. I am familiar with accessibility practices and I have
             experience utilizing semantic HTML and creating responsive websites.
-            I also know how to use the marquee tag, just saying...
+            I also know how to use the marquee tag, just saying.
           </div>
           <div class="skill accordion-trigger" data-accordion-trigger="two">
             <div class="skill-name">
@@ -187,7 +187,7 @@
         </div>
         <div class="project">
           <div class="project-image">
-            <img src="styles/images/thumbnails/code.jpg" alt="block of code" />
+            <img src="styles/images/thumbnails/backend-readme.PNG" alt="github readme" />
             <button class="modal-trigger" data-popup-trigger="three">
               View More
             </button>
@@ -196,12 +196,28 @@
         </div>
         <div class="modal hidden" data-popup-modal="one">
           <div class="modal-header">
-            <h3>
-              Conway's Game of Life
-            </h3>
-            <button class="modal-close">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
+            <div class="modal-title">
+              <h3>
+                Conway's Game of Life
+              </h3>
+              <button class="modal-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="modal-links">
+              <a
+                href="https://github.com/LoganSorensen/game-of-life"
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                href="https://logansorensen.github.io/game-of-life/"
+                target="_blank"
+              >
+                Demo
+              </a>
+            </div>
           </div>
           <div class="modal-content">
             <div class="image-cont">
@@ -214,36 +230,32 @@
               Conway's Game of Life is a cellular automaton created in 1970 by
               John Horton Conway. Each square, or "cell", has two states: alive
               and dead. The current state of each cell is affected by the state
-              of it's neighbors, and by adhering to a few simple rules complex
+              of its neighbors, and by adhering to a few simple rules complex
               patterns can emerge as the simulation plays out. I wrote this
               simulation using React in under a week, following these rules, as
-              an excercise in computer science algorithms.
+              an exercise in computer science algorithms.
             </p>
-            <div class="modal-links">
-              <a
-                href="https://github.com/LoganSorensen/game-of-life"
-                target="_blank"
-                ><i class="fas fa-external-link-alt"></i>
-                Github
-              </a>
-              <a
-                href="https://logansorensen.github.io/game-of-life/"
-                target="_blank"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Demo
-              </a>
-            </div>
           </div>
         </div>
         <div class="modal hidden" data-popup-modal="two">
           <div class="modal-header">
-            <h3>
-              CRWN Clothing
-            </h3>
-            <button class="modal-close">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
+            <div class="modal-title">
+              <h3>
+                CRWN Clothing
+              </h3>
+              
+              <button class="modal-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="modal-links">
+              <a
+                href="https://github.com/LoganSorensen/crwn-clothing"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
           </div>
           <div class="modal-content">
             <div class="image-cont">
@@ -257,31 +269,34 @@
               handles routing between pages using React Router DOM, interfaces
               with Firebase to handle user authentication, and uses Redux to
               manage global state. Additionally, I added Stripe integration to
-              process mock payments, to make this a fully functional store.
+              process mock payments to make this a fully functional store.
             </p>
-            <div class="modal-links">
-              <a
-                href="https://github.com/LoganSorensen/crwn-clothing"
-                target="_blank"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Github
-              </a>
-            </div>
           </div>
         </div>
         <div class="modal hidden" data-popup-modal="three">
           <div class="modal-header">
-            <h3>
-              Silent Auction Backend
-            </h3>
-            <button class="modal-close">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
+            <div class="modal-title">
+
+              <h3>
+                Silent Auction Backend
+              </h3>
+              <button class="modal-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="modal-links">
+              <a
+              href="https://github.com/Web26-Silent-Auction-1/BE"
+              target="_blank"
+              >
+              Github
+            </a>
+          </div>
+          
           </div>
           <div class="modal-content">
             <div class="image-cont">
-              <img src="styles/images/code.jpg" alt="block of code" />
+              <img src="styles/images/backend-readme.PNG" alt="github readme" />
             </div>
             <p>
               I created this backend for an online auction application I was
@@ -289,19 +304,12 @@
               RESTful API for the frontend to interface with. I created a
               SQLite3 database, which stored information about auctions, bids,
               and users of the application. Additionally, I implemented user
-              authentication by generating a JWT, and utilized bcrypt.js to hash
+              authentication by generating a JWT and utilized bcrypt.js to hash
               the user's password. Finally, I added Stripe integration on both
               the frontend and backend of the application.
             </p>
-            <div class="modal-links">
-              <a
-                href="https://github.com/Web26-Silent-Auction-1/BE"
-                target="_blank"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Github
-              </a>
-            </div>
+            <!-- <div class="modal-links">
+            </div> -->
           </div>
         </div>
       </div>
