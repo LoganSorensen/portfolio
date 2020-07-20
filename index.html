@@ -187,7 +187,10 @@
         </div>
         <div class="project">
           <div class="project-image">
-            <img src="styles/images/thumbnails/backend-readme.PNG" alt="github readme" />
+            <img
+              src="styles/images/thumbnails/backend-readme.PNG"
+              alt="github readme"
+            />
             <button class="modal-trigger" data-popup-trigger="three">
               View More
             </button>
@@ -243,7 +246,7 @@
               <h3>
                 CRWN Clothing
               </h3>
-              
+
               <button class="modal-close">
                 <i class="fa fa-times" aria-hidden="true"></i>
               </button>
@@ -276,7 +279,6 @@
         <div class="modal hidden" data-popup-modal="three">
           <div class="modal-header">
             <div class="modal-title">
-
               <h3>
                 Silent Auction Backend
               </h3>
@@ -286,13 +288,12 @@
             </div>
             <div class="modal-links">
               <a
-              href="https://github.com/Web26-Silent-Auction-1/BE"
-              target="_blank"
+                href="https://github.com/Web26-Silent-Auction-1/BE"
+                target="_blank"
               >
-              Github
-            </a>
-          </div>
-          
+                Github
+              </a>
+            </div>
           </div>
           <div class="modal-content">
             <div class="image-cont">
@@ -308,28 +309,39 @@
               the user's password. Finally, I added Stripe integration on both
               the frontend and backend of the application.
             </p>
-            <!-- <div class="modal-links">
-            </div> -->
           </div>
         </div>
       </div>
     </section>
     <section class="contact-section" id="contact">
       <h2>Contact</h2>
-      <form>
-        <input class="form-input" type="text" placeholder="Name" required />
+      <form
+        action="https://formspree.io/myynlyzq"
+        method="POST"
+        id="contact-form"
+      >
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
         <input
           class="form-input"
           type="email"
+          name="_replyto"
           placeholder="Enter Email"
           required
         />
         <textarea
           class="form-input"
+          name="message"
           placeholder="Your message"
           required
         ></textarea>
-        <button>Submit</button>
+        <button id="form-button">Submit</button>
+        <p id="form-status" class="form-status"></p>
       </form>
       <div class="links">
         <a href="https://github.com/LoganSorensen" target="_blank">
