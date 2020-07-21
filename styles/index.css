@@ -308,7 +308,8 @@ section {
   padding: 1%;
   font-size: 2.3rem;
   text-align: center;
-  width: 20%;
+  width: 40%;
+  height: 75%;
 }
 .modal a:hover {
   -webkit-transition: 0.4s ease;
@@ -319,14 +320,15 @@ section {
 }
 @media (max-width: 1400px) {
   .modal a {
-    width: 40%;
+    width: 50%;
     padding: 2%;
+    margin: 1%;
   }
 }
 @media (max-width: 500px) {
   .modal a {
     font-size: 2rem;
-    width: 45%;
+    width: 100%;
   }
 }
 .modal .modal-close {
@@ -623,6 +625,11 @@ nav a:focus {
     height: 6vh;
   }
 }
+@media (max-height: 800px) {
+  .about-section .skills-section .skill {
+    padding: 3% 0;
+  }
+}
 .about-section .skills-section .skill .skill-name {
   display: flex;
   align-items: center;
@@ -794,7 +801,6 @@ nav a:focus {
 }
 .modal .modal-header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2%;
@@ -819,14 +825,20 @@ nav a:focus {
 .modal .modal-header .modal-links {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .modal .modal-header .modal-links {
+    flex-direction: column;
+    margin-left: 5%;
+  }
 }
 .modal .modal-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2%;
+  align-items: center;
 }
 .modal .modal-content {
   display: flex;
