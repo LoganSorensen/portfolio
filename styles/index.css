@@ -849,9 +849,10 @@ nav a:focus {
   padding-bottom: 10%;
 }
 .modal .modal-content .image-cont {
-  width: 80%;
+  width: 100%;
   height: 80%;
   text-align: center;
+  border-bottom: 2px solid black;
 }
 .modal .modal-content .image-cont img {
   width: 100%;
@@ -952,6 +953,18 @@ nav a:focus {
   .contact-section form textarea {
     min-height: 20vh;
   }
+}
+.contact-section form ::placeholder {
+  color: white;
+}
+.contact-section form ::-moz-placeholder {
+  color: white;
+}
+.contact-section form :-ms-input-placeholder {
+  color: white;
+}
+.contact-section form ::-ms-input-placeholder {
+  color: white;
 }
 .contact-section form .form-status {
   font-weight: bold;
